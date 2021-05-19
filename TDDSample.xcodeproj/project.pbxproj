@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		D56D449C265264910030DB3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56D449B265264910030DB3B /* AppDelegate.swift */; };
 		D56D449E265264910030DB3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56D449D265264910030DB3B /* SceneDelegate.swift */; };
-		D56D44A0265264910030DB3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56D449F265264910030DB3B /* ViewController.swift */; };
-		D56D44A3265264910030DB3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D56D44A1265264910030DB3B /* Main.storyboard */; };
 		D56D44A5265264930030DB3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D56D44A4265264930030DB3B /* Assets.xcassets */; };
-		D56D44A8265264930030DB3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D56D44A6265264930030DB3B /* LaunchScreen.storyboard */; };
 		D56D44B3265264930030DB3B /* TDDSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56D44B2265264930030DB3B /* TDDSampleTests.swift */; };
 		D56D44BE265264930030DB3B /* TDDSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56D44BD265264930030DB3B /* TDDSampleUITests.swift */; };
+		D56D44D52652714C0030DB3B /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56D44D42652714C0030DB3B /* ArticleListViewController.swift */; };
+		D56D44DA265271E00030DB3B /* ArticleListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56D44D9265271E00030DB3B /* ArticleListViewControllerTests.swift */; };
+		D56D44E626539AF50030DB3B /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56D44E526539AF50030DB3B /* Article.swift */; };
+		D56D44FB26539F990030DB3B /* ArticleListAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56D44FA26539F990030DB3B /* ArticleListAPIClient.swift */; };
+		D56D450526539FD30030DB3B /* ArticleListAPIClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56D44EB26539E990030DB3B /* ArticleListAPIClientProtocol.swift */; };
+		D56D450A2653AC690030DB3B /* ArticleListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56D45092653AC690030DB3B /* ArticleListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,10 +41,7 @@
 		D56D4498265264910030DB3B /* TDDSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDDSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D56D449B265264910030DB3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D56D449D265264910030DB3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D56D449F265264910030DB3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D56D44A2265264910030DB3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D56D44A4265264930030DB3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D56D44A7265264930030DB3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D56D44A9265264930030DB3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D56D44AE265264930030DB3B /* TDDSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D56D44B2265264930030DB3B /* TDDSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDSampleTests.swift; sourceTree = "<group>"; };
@@ -49,6 +49,12 @@
 		D56D44B9265264930030DB3B /* TDDSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D56D44BD265264930030DB3B /* TDDSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDSampleUITests.swift; sourceTree = "<group>"; };
 		D56D44BF265264930030DB3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D56D44D42652714C0030DB3B /* ArticleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
+		D56D44D9265271E00030DB3B /* ArticleListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewControllerTests.swift; sourceTree = "<group>"; };
+		D56D44E526539AF50030DB3B /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		D56D44EB26539E990030DB3B /* ArticleListAPIClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListAPIClientProtocol.swift; sourceTree = "<group>"; };
+		D56D44FA26539F990030DB3B /* ArticleListAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListAPIClient.swift; sourceTree = "<group>"; };
+		D56D45092653AC690030DB3B /* ArticleListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +105,15 @@
 		D56D449A265264910030DB3B /* TDDSample */ = {
 			isa = PBXGroup;
 			children = (
+				D56D44E426539AD60030DB3B /* Model */,
 				D56D449B265264910030DB3B /* AppDelegate.swift */,
 				D56D449D265264910030DB3B /* SceneDelegate.swift */,
-				D56D449F265264910030DB3B /* ViewController.swift */,
-				D56D44A1265264910030DB3B /* Main.storyboard */,
 				D56D44A4265264930030DB3B /* Assets.xcassets */,
-				D56D44A6265264930030DB3B /* LaunchScreen.storyboard */,
 				D56D44A9265264930030DB3B /* Info.plist */,
+				D56D44EB26539E990030DB3B /* ArticleListAPIClientProtocol.swift */,
+				D56D44D42652714C0030DB3B /* ArticleListViewController.swift */,
+				D56D44FA26539F990030DB3B /* ArticleListAPIClient.swift */,
+				D56D45092653AC690030DB3B /* ArticleListCell.swift */,
 			);
 			path = TDDSample;
 			sourceTree = "<group>";
@@ -115,6 +123,7 @@
 			children = (
 				D56D44B2265264930030DB3B /* TDDSampleTests.swift */,
 				D56D44B4265264930030DB3B /* Info.plist */,
+				D56D44D9265271E00030DB3B /* ArticleListViewControllerTests.swift */,
 			);
 			path = TDDSampleTests;
 			sourceTree = "<group>";
@@ -126,6 +135,14 @@
 				D56D44BF265264930030DB3B /* Info.plist */,
 			);
 			path = TDDSampleUITests;
+			sourceTree = "<group>";
+		};
+		D56D44E426539AD60030DB3B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D56D44E526539AF50030DB3B /* Article.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D56D44A8265264930030DB3B /* LaunchScreen.storyboard in Resources */,
 				D56D44A5265264930030DB3B /* Assets.xcassets in Resources */,
-				D56D44A3265264910030DB3B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D56D44A0265264910030DB3B /* ViewController.swift in Sources */,
+				D56D450526539FD30030DB3B /* ArticleListAPIClientProtocol.swift in Sources */,
+				D56D44E626539AF50030DB3B /* Article.swift in Sources */,
+				D56D44D52652714C0030DB3B /* ArticleListViewController.swift in Sources */,
+				D56D450A2653AC690030DB3B /* ArticleListCell.swift in Sources */,
+				D56D44FB26539F990030DB3B /* ArticleListAPIClient.swift in Sources */,
 				D56D449C265264910030DB3B /* AppDelegate.swift in Sources */,
 				D56D449E265264910030DB3B /* SceneDelegate.swift in Sources */,
 			);
@@ -269,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D56D44B3265264930030DB3B /* TDDSampleTests.swift in Sources */,
+				D56D44DA265271E00030DB3B /* ArticleListViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,25 +314,6 @@
 			targetProxy = D56D44BA265264930030DB3B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		D56D44A1265264910030DB3B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D56D44A2265264910030DB3B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D56D44A6265264930030DB3B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D56D44A7265264930030DB3B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D56D44C0265264930030DB3B /* Debug */ = {
